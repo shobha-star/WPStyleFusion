@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pink-primary: #FFB6C1;
+  --color-pink-light: #F8C8DC;
+  --color-indigo-start: #1E1B4B;
+  --color-indigo-end: #312E81;
+  --color-gold: #D4AF37;
+  
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
