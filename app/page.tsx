@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import Image from 'next/image';
 import { 
   Scissors, Sparkles, Smile, Star, MapPin, 
   Phone, Mail, Menu, X, ArrowRight, CheckCircle2,
@@ -71,34 +70,14 @@ const TESTIMONIALS = [
 ];
 
 const BrandLogo = ({ isDarkBg = false, className = "" }: { isDarkBg?: boolean, className?: string }) => {
-  const primaryColor = isDarkBg ? '#F8C8DC' : '#D46A6A';
-  const secondaryColor = isDarkBg ? '#FFFFFF' : '#4A2C31';
-
   return (
     <div className={`flex items-center ${className} select-none`}>
-      <div className="relative flex items-center justify-center w-10 h-14 md:w-12 md:h-16 shrink-0 mr-1">
-        <span 
-          className="font-serif text-[3.5rem] md:text-[4.5rem] absolute left-0 z-10 font-normal leading-none" 
-          style={{ color: primaryColor }}
-        >
-          S
-        </span>
-        <span 
-          className="font-serif text-[2.5rem] md:text-[3.25rem] absolute left-4 md:left-5 top-3 md:top-4 z-0 font-light leading-none" 
-          style={{ color: secondaryColor }}
-        >
-          F
-        </span>
-      </div>
-      <div className="flex flex-col pt-1">
-        <div className="flex items-center relative pl-[2px]">
-          <div className="absolute top-0 left-0 w-[85%] h-[1.5px]" style={{ backgroundColor: secondaryColor }}></div>
-          <span className="font-sans text-lg md:text-xl tracking-[0.18em] font-light mt-[3px]" style={{ color: secondaryColor }}>TYLE</span>
-          <Scissors className="w-4 h-4 ml-1 transform rotate-45 -translate-y-[2px]" strokeWidth={1.5} style={{ color: secondaryColor }} />
-        </div>
-        <div className="font-sans text-lg md:text-xl tracking-[0.16em] font-medium leading-none" style={{ color: secondaryColor }}>
-          USION
-        </div>
+      <div className="relative flex items-center justify-center w-48 h-16 md:w-56 md:h-20 shrink-0">
+        <img
+          src="/logo.png"
+          alt="Style Fusion Logo"
+          className={`w-full h-full object-contain ${isDarkBg ? '' : 'brightness-0'}`}
+        />
       </div>
     </div>
   );
@@ -233,7 +212,7 @@ export default function StyleFusion() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-serif text-white font-bold mb-6 drop-shadow-xl"
+            className="text-4xl md:text-6xl font-serif text-white font-bold mb-6 drop-shadow-xl"
           >
             Where Beauty <br />
             <span className="text-gold italic">Meets Innovation</span>
@@ -275,11 +254,10 @@ export default function StyleFusion() {
               transition={{ duration: 0.8 }}
               className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]"
             >
-              <Image 
+              <img 
                 src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=1000&auto=format&fit=crop"
                 alt="Stylists working in salon"
-                fill
-                className="object-cover"
+                className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/50 to-transparent"></div>
@@ -367,11 +345,10 @@ export default function StyleFusion() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="absolute inset-0"
               >
-                <Image 
+                <img 
                   src={GALLERY[galleryIdx].src} 
                   alt={GALLERY[galleryIdx].alt}
-                  fill 
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/80 via-transparent to-transparent flex items-end pb-8 px-8">
@@ -551,11 +528,10 @@ export default function StyleFusion() {
               
               {/* Map Placeholder */}
               <div className="w-full flex-grow min-h-[300px] bg-indigo-start border border-white/10 rounded-3xl overflow-hidden relative group cursor-pointer">
-                <Image 
+                <img 
                   src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop" 
                   alt="Map Location Placeholder" 
-                  fill 
-                  className="object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-700" 
+                  className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-700" 
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-indigo-950/40 group-hover:bg-transparent transition-colors">
