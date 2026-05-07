@@ -37,20 +37,20 @@ const GALLERY = [
     alt: "Indian Bridal Makeup"
   },
   {
-    src: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&fit=crop",
-    alt: "Nail Art"
+    src: "https://images.unsplash.com/photo-1583391733958-611681284d72?q=80&w=1000&auto=format&fit=crop",
+    alt: "Bridal Styling"
   },
   {
-    src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000&auto=format&fit=crop",
-    alt: "Hair Cutting"
+    src: "https://images.unsplash.com/photo-1614030424754-24d0eebd2602?q=80&w=1000&auto=format&fit=crop",
+    alt: "Traditional Look"
   },
   {
-    src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop",
-    alt: "Body Polishing"
+    src: "https://images.unsplash.com/photo-1620052309855-30bb9356ce08?q=80&w=1000&auto=format&fit=crop",
+    alt: "Bridal Jewelry & Glamour"
   },
   {
-    src: "https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=1000&auto=format&fit=crop",
-    alt: "Straightening & Smoothing"
+    src: "https://images.unsplash.com/photo-1558898252-9dae4e2c9183?q=80&w=1000&auto=format&fit=crop",
+    alt: "Engagement Makeup"
   }
 ];
 
@@ -202,7 +202,7 @@ export default function StyleFusion() {
       <section 
         id="home" 
         className="relative h-screen flex items-center justify-center bg-cover bg-center bg-fixed overflow-hidden"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2500&auto=format&fit=crop")' }}
+        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?q=80&w=2500&auto=format&fit=crop")' }}
       >
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-start/80 via-indigo-start/50 to-pink-primary/40 z-0"></div>
